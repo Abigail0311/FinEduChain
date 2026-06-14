@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="FinEduChain - Iniciar Sesión. Accede a tu mentoría financiera y microcréditos con autenticación segura en blockchain.">
+  <title>Iniciar Sesión - FinEduChain</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="login-body">
+
+  <!-- Glowing Ambient Blobs -->
+  <div class="blob blob-1" style="opacity: 0.15;"></div>
+  <div class="blob blob-2" style="opacity: 0.15;"></div>
+
+  <!-- Login Card container -->
+  <div class="login-card glass-panel rv in">
+    <div class="login-header">
+      <a href="index.html" class="nav-brand">
+        <div class="logo-icon">
+          <i class="fa-solid fa-link"></i>
+        </div>
+        <span class="logo-text">FinEduChain</span>
+      </a>
+      <h2>Ingresa a tu cuenta</h2>
+      <p>Acceso seguro para solicitantes y cooperativas</p>
+    </div>
+
+    <!-- Simulated Wallet Connection Option (Top Priority for Blockchain UI) -->
+    <button type="button" class="btn-wallet-connect" id="btn-login-wallet">
+      <i class="fa-solid fa-wallet wallet-icon"></i>
+      <span id="wallet-btn-text">Vincular Wallet Blockchain</span>
+    </button>
+
+    <div class="login-divider">O ingresa con credenciales</div>
+
+    <!-- Credentials Form -->
+    <form id="login-form" novalidate>
+      <div class="form-grid" style="grid-template-columns: 1fr;">
+        
+        <div class="form-group full-width">
+          <label for="login-email">Correo Electrónico *</label>
+          <input type="email" id="login-email" name="loginEmail" placeholder="ejemplo@correo.com" required>
+        </div>
+
+        <div class="form-group full-width" style="margin-top: 0.5rem;">
+          <div style="display: flex; justify-content: space-between; align-items: center;">
+            <label for="login-password">Contraseña *</label>
+            <a href="#" style="color: var(--cyan); text-decoration: none; font-size: 0.75rem;">¿La olvidaste?</a>
+          </div>
+          <input type="password" id="login-password" name="loginPassword" placeholder="••••••••" required>
+        </div>
+
+        <div class="form-group full-width form-actions" style="margin-top: 1.5rem;">
+          <button type="submit" class="btn btn-primary" style="width: 100%;">Iniciar Sesión</button>
+        </div>
+
+      </div>
+    </form>
+
+    <!-- Login Footer links -->
+    <div class="login-footer-links">
+      <p>¿No tienes cuenta? <a href="index.html#register">Regístrate aquí</a></p>
+      <p style="margin-top: 0.5rem;">
+        <a href="index.html" class="back-home">
+          <i class="fa-solid fa-arrow-left" style="font-size: 0.75rem; margin-right: 0.25rem;"></i> Volver a la página principal
+        </a>
+      </p>
+    </div>
+  </div>
+
+  <!-- Toast Notification element for custom feedback -->
+  <div class="toast-msg" id="login-toast">
+    <i class="fa-solid fa-circle-check" id="toast-icon"></i>
+    <span id="toast-text">¡Acceso concedido!</span>
+  </div>
+
+  <!-- Import JS script (needs to run wallet simulation and validation) -->
+  <script src="script.js"></script>
+</body>
+</html>

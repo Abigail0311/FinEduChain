@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="FinEduChain - Gestión inteligente y transparente de microcréditos comunitarios con IA y Blockchain. Inclusión financiera con educación digital.">
+  <title>FinEduChain - Gestión Inteligente de Microcréditos con Blockchain</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Font Awesome for Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+  <!-- ══════════════════════════════════════════
+       NAVBAR
+  ══════════════════════════════════════════ -->
+  <nav id="nav">
+    <a href="#hero" class="nav-brand">
+      <div class="logo-icon">
+        <i class="fa-solid fa-link"></i>
+      </div>
+      <span class="logo-text">FinEduChain</span>
+    </a>
+    
+    <ul class="nav-links">
+      <li><a href="#hero" class="active">Inicio</a></li>
+      <li><a href="#how-it-works">Cómo funciona</a></li>
+      <li><a href="#benefits">Beneficios</a></li>
+      <li><a href="#register">Registrarse</a></li>
+      <li><a href="#testimonials">Testimonios</a></li>
+      <li><a href="#team">Equipo</a></li>
+    </ul>
+
+    <div class="nav-actions">
+      <a href="login.html" class="btn btn-text">Iniciar Sesión</a>
+      <a href="#register" class="btn btn-primary">Registrarse</a>
+    </div>
+
+    <button class="burger" id="burg" aria-label="Abrir menú de navegación">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </nav>
+
+  <!-- Mobile Navigation -->
+  <div class="mob-nav" id="mobnav">
+    <a href="#hero" onclick="closeMob()">Inicio</a>
+    <a href="#how-it-works" onclick="closeMob()">Cómo funciona</a>
+    <a href="#benefits" onclick="closeMob()">Beneficios</a>
+    <a href="#register" onclick="closeMob()">Registrarse</a>
+    <a href="#testimonials" onclick="closeMob()">Testimonios</a>
+    <a href="#team" onclick="closeMob()">Equipo</a>
+    <div class="mob-nav-actions">
+      <a href="login.html" class="btn btn-outline" style="max-width: 100%;">Iniciar Sesión</a>
+      <a href="#register" class="btn btn-primary" onclick="closeMob()" style="max-width: 100%;">Registrarse</a>
+    </div>
+  </div>
+
+  <!-- ══════════════════════════════════════════
+       HERO SECTION
+  ══════════════════════════════════════════ -->
+  <header id="hero">
+    <!-- Interactive Background Particle Canvas -->
+    <canvas id="particle-canvas"></canvas>
+    
+    <!-- Glowing Ambient Blobs -->
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+    <div class="blob blob-3"></div>
+
+    <div class="hero-content">
+      <div class="hero-title-wrap rv">
+        <h1 class="hero-title">
+          Gestión Inteligente de Microcréditos <br>con <span class="highlight-cyan">Blockchain</span> e <span class="highlight-cyan">IA</span>
+        </h1>
+      </div>
+      
+      <p class="hero-subtitle rv delay-1">
+        Transformamos los microcréditos tradicionales en un proceso 
+        <span class="hero-subtitle-typewriter" id="tw-text">educativo e inmutable</span><span class="tw-cursor"></span>
+      </p>
+
+      <div class="hero-buttons rv delay-2">
+        <a href="#register" class="btn btn-primary btn-lg">Comenzar Ahora</a>
+        <a href="#how-it-works" class="btn btn-outline btn-lg">Ver Demo</a>
+      </div>
+    </div>
+
+    <!-- Feature Cards -->
+    <div class="hero-features rv delay-3">
+      <!-- Card 1 -->
+      <div class="feature-card glass-panel">
+        <div class="feature-icon-box">
+          <i class="fa-solid fa-shield-halved"></i>
+        </div>
+        <h3>Seguridad Blockchain</h3>
+        <p>Historiales inmutables de cumplimiento y identidades digitales auto-soberanas que protegen la privacidad.</p>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="feature-card glass-panel">
+        <div class="feature-icon-box">
+          <i class="fa-solid fa-brain"></i>
+        </div>
+        <h3>IA Personalizada</h3>
+        <p>Mentoría crediticia inteligente que analiza hábitos financieros y genera planes de gasto optimizados.</p>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="feature-card glass-panel">
+        <div class="feature-icon-box">
+          <i class="fa-solid fa-file-contract"></i>
+        </div>
+        <h3>Contratos Inteligentes</h3>
+        <p>Automatización total del ciclo del crédito: desembolso inmediato, cobros transparentes y reducción de mora.</p>
+      </div>
+    </div>
+  </header>
+
+  <!-- ══════════════════════════════════════════
+       CÓMO FUNCIONA
+  ══════════════════════════════════════════ -->
+  <section class="section" id="how-it-works">
+    <div class="section-header rv">
+      <span class="section-tag">Proceso</span>
+      <h2 class="section-title">El camino hacia la inclusión responsable</h2>
+      <p class="section-subtitle">Diseñado para guiar y empoderar a comunidades urbanas y rurales mediante tecnología confiable.</p>
+    </div>
+
+    <div class="process-grid">
+      <!-- Step 1 -->
+      <div class="process-step glass-panel rv delay-1">
+        <div class="step-num">01</div>
+        <h3>Registro con Wallet o Biometría</h3>
+        <p>Vinculas tu identidad digital única descentralizada a la plataforma, garantizando un acceso seguro y privado sin contraseñas.</p>
+      </div>
+
+      <!-- Step 2 -->
+      <div class="process-step glass-panel rv delay-2">
+        <div class="step-num">02</div>
+        <h3>Diagnóstico e IA Financiera</h3>
+        <p>El motor inteligente evalúa tu perfil on-chain y de negocio para entregarte una ruta de inversión productiva y educativa.</p>
+      </div>
+
+      <!-- Step 3 -->
+      <div class="process-step glass-panel rv delay-3">
+        <div class="step-num">03</div>
+        <h3>Historial Inmutable</h3>
+        <p>Cada hito de pago y asesoría se registra en la blockchain, construyendo una reputación crediticia portátil que abres al ecosistema.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════
+       ESTADÍSTICAS SECTION (NEW)
+  ══════════════════════════════════════════ -->
+  <section class="section" id="stats-section">
+    <div class="section-header rv">
+      <span class="section-tag">Estadísticas</span>
+      <h2 class="section-title">Demanda y Aceptación de Mercado</h2>
+      <p class="section-subtitle">Datos reales obtenidos en nuestra investigación y encuesta de viabilidad del ecosistema digital.</p>
+    </div>
+
+    <div class="stats-grid">
+      <!-- Stat 1 -->
+      <div class="stat-card glass-panel rv delay-1" id="stat-0-card">
+        <span class="stat-number color-cyan" id="stat-0" data-target="81">0%</span>
+        <p class="stat-description">Tiene entre 18 y 30 años, representando el público objetivo digital idóneo para la plataforma.</p>
+      </div>
+
+      <!-- Stat 2 -->
+      <div class="stat-card glass-panel rv delay-2" id="stat-1-card">
+        <span class="stat-number color-gold" id="stat-1" data-target="81">0%</span>
+        <p class="stat-description">Ya solicitó o consideró solicitar un microcrédito, demostrando demanda real en el mercado.</p>
+      </div>
+
+      <!-- Stat 3 -->
+      <div class="stat-card glass-panel rv delay-3" id="stat-2-card">
+        <span class="stat-number color-cyan" id="stat-2" data-target="88">0%</span>
+        <p class="stat-description">Usaría o probablemente usaría FinEduChain, demostrando una alta aceptación del producto.</p>
+      </div>
+
+      <!-- Stat 4 -->
+      <div class="stat-card glass-panel rv delay-4" id="stat-3-card">
+        <span class="stat-number color-gold" id="stat-3" data-target="69">0%</span>
+        <p class="stat-description">Calificó con 4 o 5 estrellas al mentor financiero con IA, validando nuestra solución de asesoría.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════
+       BENEFICIOS SECTION (NEW LAYOUT POSITION)
+  ══════════════════════════════════════════ -->
+  <section class="section" id="benefits">
+    <div class="benefits-container">
+      
+      <!-- Info Panel -->
+      <div class="benefits-info-panel rv rv-left">
+        <span class="benefits-tag">Beneficios</span>
+        <h2>Únete a la Red Financiera del Futuro</h2>
+        <p>Toma el control de tus finanzas con la protección criptográfica de la blockchain y el acompañamiento inteligente de la IA.</p>
+
+        <div class="benefits-list">
+          <!-- Item 1 -->
+          <div class="benefits-item">
+            <div class="benefits-icon">
+              <i class="fa-solid fa-circle-check"></i>
+            </div>
+            <div class="benefits-text">
+              <h4>Identidad Auto-soberana (SSI)</h4>
+              <p>Eres dueño de tus credenciales financieras y las compartes con terceros de forma selectiva, garantizando privacidad absoluta.</p>
+            </div>
+          </div>
+
+          <!-- Item 2 -->
+          <div class="benefits-item">
+            <div class="benefits-icon">
+              <i class="fa-solid fa-circle-check"></i>
+            </div>
+            <div class="benefits-text">
+              <h4>Cero Costos Ocultos</h4>
+              <p>Los Smart Contracts ejecutan reglas inalterables de intereses y penalidades en mora, eliminando cobros sorpresa.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Wallet Card Visualizer (Right Column in Benefits) -->
+      <div class="wallet-card-visual-wrapper rv rv-right">
+        <div class="wallet-card-visual">
+          <div class="wc-header">
+            <span>FINTOUCH WALLET</span>
+            <div class="wc-status">
+              <div class="wc-dot"></div>
+              <span>CONNECTED</span>
+            </div>
+          </div>
+          <div class="wc-chip"></div>
+          <div class="wc-address" id="simulated-address">0x71C7...60A5</div>
+          <div class="wc-footer">
+            <span>CREDIT VALUE PORTABLE</span>
+            <span>SECURE ON CHAIN</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════
+       REGISTRO (SPLIT LAYOUT & ZOOM BACKGROUND)
+  ══════════════════════════════════════════ -->
+  <section id="register">
+    
+    <!-- Parallax Background Container -->
+    <div id="register-bg-container">
+      <div id="register-bg"></div>
+    </div>
+
+    <!-- Split Grid Layout Container -->
+    <div class="register-split-container">
+      
+      <!-- Left side text overlay -->
+      <div class="register-left-content rv rv-left">
+        <h2>Gestión crediticia inteligente y soberana</h2>
+        <p>Conéctate al ecosistema descentralizado líder en microcréditos. Resguarda tu identidad digital, accede a mentoría de IA automatizada y obtén financiamiento responsable.</p>
+      </div>
+
+      <!-- Right side form card aligned to the right (occupies ~42%) -->
+      <div class="register-form-card glass-panel rv rv-right">
+        <h2>Regístrate</h2>
+        <p>Completa tus datos para iniciar tu diagnóstico crediticio interactivo.</p>
+        
+        <form id="registration-form" novalidate>
+          <div class="form-grid">
+            
+            <div class="form-group">
+              <label for="ap-paterno">Apellido Paterno *</label>
+              <input type="text" id="ap-paterno" name="apPaterno" placeholder="Ej. Quispe" required>
+            </div>
+
+            <div class="form-group">
+              <label for="ap-materno">Apellido Materno *</label>
+              <input type="text" id="ap-materno" name="apMaterno" placeholder="Ej. Mendoza" required>
+            </div>
+
+            <div class="form-group full-width">
+              <label for="nombres">Nombres *</label>
+              <input type="text" id="nombres" name="nombres" placeholder="Ej. María Teresa" required>
+            </div>
+
+            <div class="form-group">
+              <label for="genero">Género *</label>
+              <select id="genero" name="genero" required>
+                <option value="" disabled selected>Seleccione...</option>
+                <option value="Femenino">Femenino</option>
+                <option value="Masculino">Masculino</option>
+                <option value="Otro">Otro / Prefiero no decirlo</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="tipo-doc">Tipo de Documento *</label>
+              <select id="tipo-doc" name="tipoDoc" required>
+                <option value="" disabled selected>Seleccione...</option>
+                <option value="DNI">DNI (Perú)</option>
+                <option value="CE">Carnet de Extranjería</option>
+                <option value="Pasaporte">Pasaporte</option>
+              </select>
+            </div>
+
+            <div class="form-group full-width">
+              <label for="correo">Correo Electrónico *</label>
+              <input type="email" id="correo" name="correo" placeholder="ejemplo@correo.com" required>
+            </div>
+
+            <div class="form-group full-width">
+              <label for="celular">Número Celular *</label>
+              <input type="tel" id="celular" name="celular" placeholder="Ej. 987654321" required>
+            </div>
+
+            <div class="form-checkbox full-width">
+              <input type="checkbox" id="auth-datos" name="authDatos" required>
+              <label for="auth-datos">
+                Autorizo el tratamiento de mis datos personales para la evaluación crediticia según la Ley de Protección de Datos Personales N° 29733 en Perú.
+              </label>
+            </div>
+
+            <div class="form-group full-width form-actions">
+              <button type="submit" class="btn btn-primary">Enviar Solicitud</button>
+            </div>
+
+          </div>
+        </form>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════
+       TESTIMONIOS
+  ══════════════════════════════════════════ -->
+  <section class="section" id="testimonials">
+    <div class="section-header rv">
+      <span class="section-tag">Testimonios</span>
+      <h2 class="section-title">Voces de impacto real</h2>
+      <p class="section-subtitle">Historias de usuarios y asesores que redefinen la salud crediticia digital en el ecosistema.</p>
+    </div>
+
+    <div class="testimonials-grid">
+      <!-- Testimonial 1 -->
+      <div class="testimonial-card glass-panel rv delay-1">
+        <div class="quote-icon"><i class="fa-solid fa-quote-left"></i></div>
+        <p class="testimonial-text">
+          "Gracias a la guía de la IA de FinEduChain, pude planificar la compra de insumos para mi negocio sin sobreendeudarme. La mentoría financiera cambió completamente mi perspectiva de inversión."
+        </p>
+        <div class="testimonial-user">
+          <div class="user-avatar-placeholder">MQ</div>
+          <div class="user-info">
+            <h4>María Quispe</h4>
+            <span>Emprendedora Textil - Gamarra</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Testimonial 2 -->
+      <div class="testimonial-card glass-panel rv delay-2">
+        <div class="quote-icon"><i class="fa-solid fa-quote-left"></i></div>
+        <p class="testimonial-text">
+          "La transparencia de los smart contracts nos da la tranquilidad de que las reglas de interés son inmutables y justas. Nos integramos rápido para dar soporte crediticio en nuestra cooperativa."
+        </p>
+        <div class="testimonial-user">
+          <div class="user-avatar-placeholder">CM</div>
+          <div class="user-info">
+            <h4>Carlos Mendoza</h4>
+            <span>Prestamista Comunitario - Cusco</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Testimonial 3 -->
+      <div class="testimonial-card glass-panel rv delay-3">
+        <div class="quote-icon"><i class="fa-solid fa-quote-left"></i></div>
+        <p class="testimonial-text">
+          "Como auditor, la trazabilidad de cada microcrédito en blockchain reduce los tiempos de verificación de días a segundos, sin exponer un solo dato sensible de los prestatarios."
+        </p>
+        <div class="testimonial-user">
+          <div class="user-avatar-placeholder">SH</div>
+          <div class="user-info">
+            <h4>Sofía Huamán</h4>
+            <span>Auditora Ecosocial - Lima</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════
+       EQUIPO
+  ══════════════════════════════════════════ -->
+  <section class="section" id="team">
+    <div class="section-header rv">
+      <span class="section-tag">Fundadores</span>
+      <h2 class="section-title">El Equipo de FinEduChain</h2>
+      <p class="section-subtitle">Estudiantes de la UPC que crearon la plataforma líder en microcréditos responsables con IA y Blockchain.</p>
+    </div>
+
+    <!-- Featured Group Photo -->
+    <div class="team-header-photo rv">
+      <div class="team-group-wrapper">
+        <img src="Equipo/Foto grupal.jpeg" alt="Foto Grupal del Equipo FinEduChain" class="team-group-img">
+        <div class="team-group-overlay">
+          <h3>Equipo FinEduChain</h3>
+          <p>Innovando en Inclusión Financiera Digital — Ciclo 2026-1</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="team-container">
+      
+      <!-- Professor Section -->
+      <div class="teacher-section rv">
+        <div class="teacher-card glass-panel">
+          <div class="teacher-avatar-box">
+            <img src="Equipo/Profesora.jpeg" alt="Profesora Silvia Adelma Campos Benites" class="teacher-img">
+            <span class="teacher-badge">Mentora</span>
+          </div>
+          <div class="teacher-info">
+            <h3>Silvia Adelma Campos Benites</h3>
+            <h4>Docente del Curso</h4>
+            <p>Guía académica y mentora principal en el desarrollo de la arquitectura, diseño de patrones y cumplimiento técnico de FinEduChain en la Universidad Peruana de Ciencias Aplicadas.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Students Grid -->
+      <div class="students-grid">
+        
+        <!-- Member 1: Alejandro Campana -->
+        <div class="team-card glass-panel rv delay-1">
+          <div class="team-avatar-box">
+            <img src="Equipo/Alejandro Campana.jpeg" alt="Alejandro Matias Campana Rojas" class="team-card-img">
+          </div>
+          <h3 class="team-name">Alejandro Matias Campana Rojas</h3>
+          <span class="team-role">Ingeniero de Software</span>
+          <span class="team-code">U202511712</span>
+          
+          <div class="team-hover-info">
+            <p>Diseña la arquitectura técnica del sistema web y móvil. Define el stack y asegura la integración de los módulos de IA y Blockchain.</p>
+            <div class="team-socials">
+              <a href="#" aria-label="LinkedIn Profile"><i class="fa-brands fa-linkedin"></i></a>
+              <a href="#" aria-label="GitHub Profile"><i class="fa-brands fa-github"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Member 2: Leonard Rojas -->
+        <div class="team-card glass-panel rv delay-2">
+          <div class="team-avatar-box">
+            <img src="Equipo/Leonard.jpeg" alt="Leonard Paul Rojas Tomas" class="team-card-img">
+          </div>
+          <h3 class="team-name">Leonard Paul Rojas Tomas</h3>
+          <span class="team-role">Desarrollador</span>
+          <span class="team-code">U20251G076</span>
+
+          <div class="team-hover-info">
+            <p>Programa las interfaces de usuario web y móvil. Integra los contratos inteligentes en blockchain y optimiza el rendimiento del código.</p>
+            <div class="team-socials">
+              <a href="#" aria-label="LinkedIn Profile"><i class="fa-brands fa-linkedin"></i></a>
+              <a href="#" aria-label="GitHub Profile"><i class="fa-brands fa-github"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Member 3: Abigail Ancco -->
+        <div class="team-card glass-panel rv delay-3">
+          <div class="team-avatar-box">
+            <img src="Equipo/Abigail Annco.jpeg" alt="Abigail Rebeca Ancco Aldazábal" class="team-card-img">
+          </div>
+          <h3 class="team-name">Abigail Rebeca Ancco Aldazábal</h3>
+          <span class="team-role">Analista de Sistemas</span>
+          <span class="team-code">U20241I771</span>
+
+          <div class="team-hover-info">
+            <p>Levanta y documenta requerimientos funcionales. Modela diagramas UML e identifica las reglas de inclusión financiera aplicables.</p>
+            <div class="team-socials">
+              <a href="#" aria-label="LinkedIn Profile"><i class="fa-brands fa-linkedin"></i></a>
+              <a href="#" aria-label="GitHub Profile"><i class="fa-brands fa-github"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Member 4: Abigail Revilla -->
+        <div class="team-card glass-panel rv delay-4">
+          <div class="team-avatar-box">
+            <img src="Equipo/Abigail Revilla.jpeg" alt="Abigail Nicole Revilla Segovia" class="team-card-img">
+          </div>
+          <h3 class="team-name">Abigail Nicole Revilla Segovia</h3>
+          <span class="team-role">Especialista Ciberseguridad</span>
+          <span class="team-code">U20251b858</span>
+
+          <div class="team-hover-info">
+            <p>Establece protocolos de seguridad y resiliencia. Garantiza el cumplimiento de regulaciones internacionales como GDPR y WCAG.</p>
+            <div class="team-socials">
+              <a href="#" aria-label="LinkedIn Profile"><i class="fa-brands fa-linkedin"></i></a>
+              <a href="#" aria-label="GitHub Profile"><i class="fa-brands fa-github"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Member 5: Luis Hervías -->
+        <div class="team-card glass-panel rv delay-5">
+          <div class="team-avatar-box">
+            <img src="Equipo/Hervias.jpeg" alt="Luis Augusto Hervías Muedas" class="team-card-img">
+          </div>
+          <h3 class="team-name">Luis Augusto Hervías Muedas</h3>
+          <span class="team-role">Modelado de Procesos</span>
+          <span class="team-code">U202511777</span>
+
+          <div class="team-hover-info">
+            <p>Elabora objetivos del proyecto y define escenarios AS-IS / TO-BE. Diagrama flujos de crédito asegurando trazabilidad total.</p>
+            <div class="team-socials">
+              <a href="#" aria-label="LinkedIn Profile"><i class="fa-brands fa-linkedin"></i></a>
+              <a href="#" aria-label="GitHub Profile"><i class="fa-brands fa-github"></i></a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════
+       CTA FINAL & FOOTER
+  ══════════════════════════════════════════ -->
+  <section class="section" id="cta-final">
+    <div class="cta-box rv">
+      <h2>¿Listo para impulsar tu crecimiento financiero?</h2>
+      <p>Accede a un microcrédito transparente guiado por inteligencia artificial y respaldado por la blockchain.</p>
+      <div class="cta-buttons">
+        <a href="#register" class="btn btn-gold btn-lg">Comenzar Ahora</a>
+        <a href="login.html" class="btn btn-outline btn-lg">Conectar Wallet</a>
+      </div>
+    </div>
+  </section>
+
+  <footer id="footer">
+    <div class="footer-content">
+      <div class="footer-brand">
+        <a href="#hero" class="footer-logo">Fin<span>EduChain</span></a>
+        <p>Inclusión Financiera y Educación Digital con Blockchain e IA.</p>
+      </div>
+
+      <div class="footer-info">
+        <p>Curso: <span>Diseño y Patrones de Software</span></p>
+        <p>Sigla del Curso: <span>SI720</span></p>
+        <p>Ciclo: <span>2026-1</span></p>
+      </div>
+
+      <div class="footer-academic">
+        <p><span>Universidad Peruana de Ciencias Aplicadas</span></p>
+        <p>Facultad de Ingeniería</p>
+        <p>Carrera de Ingeniería de Software</p>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; 2026 FinEduChain. Todos los derechos reservados.</p>
+      <p>Desarrollado para fines académicos - Trabajo Parcial.</p>
+    </div>
+  </footer>
+
+  <!-- Toast Notification element for custom feedback -->
+  <div class="toast-msg" id="form-toast">
+    <i class="fa-solid fa-circle-check" id="toast-icon"></i>
+    <span id="toast-text">¡Mensaje enviado con éxito!</span>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
