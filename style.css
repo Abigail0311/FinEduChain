@@ -551,7 +551,7 @@ h1, h2, h3, h4, h5, h6 {
 /* ─── SECTION STYLING GENERAL ─── */
 .section {
   position: relative;
-  padding: 7rem 5% 5rem;
+  padding: 4rem 5% 3rem;
   z-index: 2;
 }
 
@@ -660,7 +660,7 @@ h1, h2, h3, h4, h5, h6 {
 /* ─── ESTADÍSTICAS SECTION (NEW) ─── */
 #stats-section {
   background: linear-gradient(180deg, rgba(7, 10, 34, 0.3) 0%, rgba(3, 5, 18, 0.6) 100%);
-  padding: 6rem 5% 5rem;
+  padding: 4rem 5% 3rem;
 }
 
 .stats-grid {
