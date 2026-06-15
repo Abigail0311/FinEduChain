@@ -717,7 +717,8 @@ h1, h2, h3, h4, h5, h6 {
 /* ─── BENEFICIOS SECTION (RESTUCTURED) ─── */
 #benefits {
   background: rgba(3, 5, 18, 0.4);
-  padding: 6rem 5%;
+  padding: 4rem 5%;
+  overflow: hidden;
 }
 
 .benefits-container {
