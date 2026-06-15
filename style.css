@@ -720,6 +720,8 @@ h1, h2, h3, h4, h5, h6 {
   background: rgba(3, 5, 18, 0.4);
   padding: 4rem 5%;
    min-height: 100vh;
+   display: flex;
+  align-items: center;
 }
 
 .benefits-container {
