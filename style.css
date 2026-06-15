@@ -558,7 +558,8 @@ h1, h2, h3, h4, h5, h6 {
 .section-header {
   text-align: center;
   max-width: 650px;
-  margin: 0 auto 4.5rem;
+  margin: 0 auto 3rem;
+  padding-top: 3rem;
 }
 
 .section-tag {
