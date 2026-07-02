@@ -571,5 +571,37 @@ document.addEventListener('DOMContentLoaded', () => {
     }
     animateLogin();
   }
+
+// Mostrar campo de número de documento según el tipo seleccionado
+const tipoDocSelect = document.getElementById('tipo-doc');
+const numDocWrapper = document.getElementById('num-doc-wrapper');
+const numDocInput = document.getElementById('num-doc');
+
+tipoDocSelect.addEventListener('change', function () {
+  const valor = this.value;
+
+  if (!valor) {
+    numDocWrapper.style.display = 'none';
+    numDocInput.required = false;
+    return;
+  }
+
+  numDocWrapper.style.display = 'block';
+  numDocInput.required = true;
+
+  if (valor === 'DNI') {
+    numDocInput.placeholder = 'Ej. 12345678';
+    numDocInput.maxLength = 8;
+    numDocInput.setAttribute('pattern', '[0-9]{8}');
+  } else if (valor === 'CE') {
+    numDocInput.placeholder = 'Ej. 001234567';
+    numDocInput.maxLength = 9;
+    numDocInput.removeAttribute('pattern');
+  } else if (valor === 'Pasaporte') {
+    numDocInput.placeholder = 'Ej. A1234567';
+    numDocInput.maxLength = 12;
+    numDocInput.removeAttribute('pattern');
+  }
+});
    
 });
