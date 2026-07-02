@@ -531,4 +531,45 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     });
   }, { passive: true });
+
+/* LOGIN PAGE PARTICLES */
+  const loginCanvas = document.getElementById('login-canvas');
+  if (loginCanvas) {
+    const lctx = loginCanvas.getContext('2d');
+    loginCanvas.width = window.innerWidth;
+    loginCanvas.height = window.innerHeight;
+    const lparticles = [];
+    for (let i = 0; i < 80; i++) {
+      lparticles.push({
+        x: Math.random() * loginCanvas.width,
+        y: Math.random() * loginCanvas.height,
+        vx: (Math.random() - 0.5) * 0.4,
+        vy: (Math.random() - 0.5) * 0.4,
+        r: Math.random() * 1.5 + 0.5,
+        alpha: Math.random() * 0.4 + 0.1,
+        color: Math.random() > 0.5 ? '#00f2fe' : '#0072ff'
+      });
+    }
+    function animateLogin() {
+      lctx.clearRect(0, 0, loginCanvas.width, loginCanvas.height);
+      lparticles.forEach(p => {
+        p.x += p.vx;
+        p.y += p.vy;
+        if (p.x < 0) p.x = loginCanvas.width;
+        if (p.x > loginCanvas.width) p.x = 0;
+        if (p.y < 0) p.y = loginCanvas.height;
+        if (p.y > loginCanvas.height) p.y = 0;
+        lctx.save();
+        lctx.globalAlpha = p.alpha;
+        lctx.fillStyle = p.color;
+        lctx.beginPath();
+        lctx.arc(p.x, p.y, p.r, 0, Math.PI * 2);
+        lctx.fill();
+        lctx.restore();
+      });
+      requestAnimationFrame(animateLogin);
+    }
+    animateLogin();
+  }
+   
 });
